@@ -1,19 +1,20 @@
 
-int x =10;
-int y = 110;
+int x =80;
+
 void setup()
 {
-  size(400,400);
+  size(600,600);
 }
 void draw()
 {
+	background(0,120,230);
 	//moving car
 	
 	//body
-	rect(x+90,y+110,200,90);
-
+	rect(x+90, 310,250,90);
+	quad(x+90, 310, x2, y2, x3, y3, x4, y4);
 	//tires
-	ellipse(x+140, y+190, 50, 50);
-	ellipse(x+240,y+190,50,50);
+	ellipse(x+140, 390, 50, 50);
+	ellipse(x+240, 390,50,50);
 
 }
